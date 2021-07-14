@@ -14,8 +14,20 @@ body {
 
 main {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+a {
+  text-decoration: none;
+  /* color: #ffffff; */
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+  border-bottom: 2px solid #2d25a0;
 }
 .container {
   background-color: var(--background-color);
@@ -50,9 +62,7 @@ main {
   transform: translate(-50px, -50px);
 }
 .watch-botton {
-  width: 168px;
-  height: 44px;
-  padding: 0;
+  padding: 15px 20px;
   border: 0;
   line-height: 44px;
   color: #ffffff;
@@ -127,6 +137,7 @@ main {
 }
 .latest-match-live h1 {
   font-size: 60px;
+  margin-top: 0px;
 }
 .latest-match-live-all {
   display: flex;
@@ -145,6 +156,53 @@ iframe {
   width: 560px;
   height: 315px;
   flex-basis: 36%;
+}
+
+/* today-match-header" */
+.today-m-s {
+  width: 76%;
+  margin-bottom: 50px;
+}
+.today-match {
+  background-color: rgba(27, 24, 24, 0.959);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+.today-match h1 {
+  color: #ffffff;
+  font-size: 28px;
+}
+
+.scores-board {
+  width: 100%;
+}
+.scores-board > h1 {
+  background-color: rgb(232, 232, 238);
+  font-size: 22px;
+  font-weight: 400;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  margin-bottom: 0;
+}
+
+.date-score {
+  display: flex;
+  padding: 0 15px;
+  background-color: rgb(224, 218, 230);
+  color: #000;
+}
+.date-score:hover {
+  background-color: rgb(43, 122, 226);
+}
+.date-score-time {
+  width: 50%;
+}
+
+.date-score-name {
+  width: 50%;
 }
 /* footer */
 
@@ -180,6 +238,7 @@ iframe {
   }
   .header-title {
     padding: 55px;
+    margin-bottom: 50px;
   }
   .header-title h1 {
     font-size: 36px;
@@ -209,6 +268,7 @@ iframe {
   }
   .hight-light-content {
     padding-right: 0px;
+    padding-bottom: 25px;
   }
   .hight-light-content h1 {
     width: 329px;
@@ -229,12 +289,13 @@ iframe {
   }
   .latest-match-live h1 {
     font-size: 30px;
+    text-align: left;
+    padding: 0 30px;
   }
   .latest-match-live-all {
     flex-direction: column;
     margin-bottom: 50px;
-    align-items: center;
-    padding: 0 25px;
+    padding: 0 30px;
   }
   .match-about {
     padding-bottom: 25px;
@@ -243,7 +304,17 @@ iframe {
     width: 300px;
     height: 300px;
   }
-
+  .today-m-s {
+    width: 100%;
+    padding: 25px;
+  }
+  .today-match h1 {
+    color: #ffffff;
+    font-size: 18px;
+  }
+  .scores-board {
+    width: 100%;
+  }
   .footer-all img {
     width: 150px;
     height: 63px;
