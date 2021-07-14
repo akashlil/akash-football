@@ -53,6 +53,7 @@ main {
   line-height: 44px;
   color: #ffffff;
   background-color: #e02c6d;
+  margin-bottom: 20px;
 }
 
 /* player .................card........................... */
@@ -97,7 +98,7 @@ main {
   margin: 0 150px 158px 180px;
 }
 .hight-light-content {
-  margin-right: 60px;
+  padding-right: 60px;
 }
 .hight-light-content h1 {
   width: 469px;
@@ -172,9 +173,34 @@ main {
   }
 
   .hight-light {
-    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin: 0;
   }
-  .footer-all {
-    display: none;
+  .hight-light-content {
+    padding-right: 0px;
+  }
+  .hight-light-content h1 {
+    width: 329px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 8px;
+  }
+  .hight-light-content p {
+    width: 329px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #6c6c6c;
+  }
+  .hight-light-img > img {
+    width: 328px;
+    height: 248px;
+    margin-bottom: 43px;
+  }
+
+  .footer-all img {
+    width: 150px;
+    height: 63px;
+    background-size: cover;
   }
 }
