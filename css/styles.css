@@ -66,10 +66,26 @@ li {
   width: 556.01px;
   height: 438px;
   margin-top: 50px;
-  transition: transform 0.5s ease-in-out;
 }
-.header-content:hover img {
-  transform: translate(-50px, -50px);
+/* ....................header image animation ....................*/
+.header-img {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+}
+@keyframes up-down {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
 }
 
 /* player .................card........................... */
@@ -232,7 +248,47 @@ iframe {
 .footer-all > p {
   font-size: 14px;
 }
-/* media screen 690px */
+/* * media screen 1050px tab  */
+@media only screen and (min-width: 690px) and (max-width: 1050px) {
+  .header-content {
+    padding: 0;
+    height: 400px;
+  }
+  .header-title {
+    margin-bottom: 100px;
+  }
+  .header-img img {
+    width: 250px;
+    height: 259.17px;
+    margin-top: -60px;
+  }
+  .header-title h1 {
+    font-size: 26px;
+    line-height: 50px;
+    color: #ffffff;
+  }
+  .hight-light {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0 75px;
+  }
+  .hight-light-content {
+    margin-bottom: 50px;
+  }
+  .hight-light-img img {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    justify-items: center;
+    margin: 0;
+  }
+}
+
+/* media screen 690px mobile */
 @media only screen and (max-width: 690px) {
   /* ..........................header............................ */
   .header-content {
@@ -308,7 +364,7 @@ iframe {
     padding-bottom: 25px;
   }
   iframe {
-    width: 300px;
+    width: 100%;
     height: 300px;
   }
   .today-m-s {
